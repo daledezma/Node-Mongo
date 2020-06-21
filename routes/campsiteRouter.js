@@ -222,7 +222,7 @@ campsiteRouter.route('/:campsiteId/comments/:commentId')
             })
             .catch(err => next(err));
         } else {
-            err = new Error('You cand delete this comment!');
+            err = new Error('You cant delete this comment!');
             err.status = 403;
             return next(err);
         }
